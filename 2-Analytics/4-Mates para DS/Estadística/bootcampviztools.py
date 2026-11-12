@@ -188,6 +188,7 @@ def plot_combined_graphs(df, columns, whisker_width=1.5, bins = None):
         plt.tight_layout()
         plt.show()
 
+
 def plot_grouped_boxplots(df, cat_col, num_col):
     unique_cats = df[cat_col].unique()
     num_cats = len(unique_cats)
@@ -202,7 +203,6 @@ def plot_grouped_boxplots(df, cat_col, num_col):
         plt.title(f'Boxplots of {num_col} for {cat_col} (Group {i//group_size + 1})')
         plt.xticks(rotation=45)
         plt.show()
-
 
 
 def plot_grouped_histograms(df, cat_col, num_col, group_size):
@@ -222,7 +222,6 @@ def plot_grouped_histograms(df, cat_col, num_col, group_size):
         plt.ylabel('Frequency')
         plt.legend()
         plt.show()
-
 
 
 def grafico_dispersion_con_correlacion(df, columna_x, columna_y, tamano_puntos=50, mostrar_correlacion=False):
